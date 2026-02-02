@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f9ff;
+}
+
+/* NAV */
+.nav {
+  background: #8c8c8c;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav .active {
+  color: yellow;
+}
+
+/* MAIN */
+.main-content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ORANGE BOX */
+.orange-box {
+  background: #ff8656;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #8c8c8c;
+  padding: 20px;
+  max-width: 300px;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="nav">
+  <a class="active">Home</a>
+  <a>Dining</a>
+  <a class="active">Spa</a>
+  <a>Rooms</a>
+  <a class="active">Contact us</a>
+</nav>
+
+<section class="main-content">
+  <img src="1.avif" alt="Dining">
+  <img src="2.avif" alt="Nature">
+
+  <div class="orange-box">
+    <div class="card">
+      <h2>Header</h2>
+      <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+      <button>Click</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
